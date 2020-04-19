@@ -34,6 +34,7 @@ describe('Test suite for Musician store REST API', () => {
     expect(responseBody).toHaveProperty('firstName');
     expect(responseBody).toHaveProperty('lastName');
     expect(responseBody).toHaveProperty('genre');
+    expect(responseBody).toHaveProperty('year')
   });
 
   test('It should fetch a musician via the GET method - error case', async () => {
@@ -87,4 +88,3 @@ describe('Test suite for Musician store REST API', () => {
   });
 
 });
-
